@@ -1,46 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <title>HTML5-Form</title>
-  </head>
-  <body></body>
+</head>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<body></body>
 
-    <!-- Form box -->
-    <div class = "container-fluid" id = "box">
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 
-        <!-- Form header -->
-        <div class = "container-fluid" id = "form_header">
-            <h1> <strong> Payment Form Example </strong>  </h1>
+<!-- Form box -->
+<div class="container-fluid" id="box">
+
+    <!-- Form header -->
+    <div class="container-fluid" id="form_header">
+        <h1> <strong> Payment Form Example </strong> </h1>
+    </div>
+
+    <!-- Form body -->
+    <div class="container-fluid" id="form_body">
+
+        <!-- Error message -->
+        <div class="container-fluid" id="error_msg">
+
         </div>
 
-        <!-- Form body -->
-        <div class = "container-fluid" id = "form_body">
-
-            <!-- Error message -->
-            <div class="container-fluid" id = "error_msg">
+        <!-- Card information -->
+        <div class="mb-5 container-fluid">
+            <div class="row">
+                <!-- Card number -->
+                <div class="col-4" style="background-color: pink;">
+                    <p>Card # </p>
+                    <input type="text" name="card_number" placeholder="XXXXXXXXXXXXXXXX" size="50">
+                </div>
+                <!-- CCV -->
+                <div class="col-3" style="background-color: yellow;">
+                    <p>CCV </p>
+                    <input type="text" name="ccv" placeholder="CCV" size="30">
+                </div>
+                <!-- Amount -->
+                <div class="col-5" style="background-color:red;">
+                    <p>Amount </p>
+                    $<input type="text" name="amount" placeholder="Amount" size="40">
+                </div>
 
             </div>
-
         </div>
 
-        <!-- Form footer -->
-        <div class = "container-fluid" id = "form_footer">
-            <button type="button" class="btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
+        <!-- Name and Last name-->
+        <div class="mb-5 container-fluid">
+            <div class="row">
+                <!-- Name -->
+                <div class="col-6" style="background-color: pink;">
+                    <p>First Name </p>
+                    <input type="name" name="name" size="85">
+                </div>
+                <!-- Last Name -->
+                <div class="col-6" style="background-color: rgb(138, 52, 66);">
+                    <p>Last Name </p>
+                    <input type="name" name="last_name" size="85">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- City, State and ZIP Code -->
+        <div class="mb-5 container-fluid">
+            <div class="row">
+                <!-- Name -->
+                <div class="col-6" style="background-color: pink;">
+                    <p>City </p>
+                    <input type="name" name="name" size="85">
+                </div>
+                <!-- City -->
+                <div class="col-3" style="background-color: rgb(138, 52, 66);">
+                    <p>State </p>
+                    <input list="cities" name="cities" placeholder="Pick up a state">
+                    <datalist id="cities">
+                        <option value="San Jose">
+                        <option value="Alajuela">
+                        <option value="Cartago">
+                        <option value="Heredia">
+                        <option value="Puntarenas">
+                        <option value="Guanacaste"> 
+                        <option value="Limon">
+                    </datalist>
+                </div>
+                <!-- ZIP Code -->
+
+            </div>
         </div>
 
     </div>
 
-  </body>
+    <!-- Form footer -->
+    <div class="container-fluid" id="form_footer">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="button" class="btn btn-primary">Send</button>
+    </div>
+
+</div>
+
+</body>
+
 </html>

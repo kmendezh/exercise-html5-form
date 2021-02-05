@@ -46,17 +46,17 @@
                     <!-- Card number -->
                     <div class="col-4">
                         <p> <strong> Card #</strong> </p>
-                        <input type="text" name="card_number" placeholder="XXXXXXXXXXXXXXXX" size="45">
+                        <input type="text" name="card_number" placeholder="XXXXXXXXXXXXXXXX" size="45" required>
                     </div>
                     <!-- CCV -->
                     <div class="col-3">
-                        <p> <strong> CCV</strong> </p>
-                        <input type="text" name="ccv" placeholder="CCV" size="30">
+                        <p> <strong> CCV #</strong> </p>
+                        <input type="text" name="ccv" placeholder="0000" size="30" required>
                     </div>
                     <!-- Amount -->
                     <div class="col-5">
                         <p><strong> Amount</strong> </p>
-                        $<input type="text" name="amount" placeholder="Amount" size="40">
+                        $<input type="text" name="amount" placeholder="Amount" size="40" required>
                     </div>
 
                 </div>
@@ -68,12 +68,12 @@
                     <!-- Name -->
                     <div class="col-6">
                         <p><strong>First Name</strong> </p>
-                        <input type="name" name="name" size="70">
+                        <input type="name" name="name" size="70" required>
                     </div>
                     <!-- Last Name -->
                     <div class="col-6">
                         <p> <strong>Last Name</strong> </p>
-                        <input type="name" name="last_name" size="70">
+                        <input type="name" name="last_name" size="70" required>
                     </div>
 
                 </div>
@@ -85,7 +85,7 @@
                     <!-- City -->
                     <div class="col-6">
                         <p> <strong>City</strong> </p>
-                        <input type="name" name="name" size="70">
+                        <input type="name" name="name" size="70" required>
                     </div>
                     <!-- State -->
                     <div class="col-3">
@@ -104,7 +104,7 @@
                     <!-- ZIP Code -->
                     <div class="col-3">
                         <p><strong>Postal Code</strong> </p>
-                        <input type="text" name="name" size="30">
+                        <input type="text" name="name" size="30" required>
                     </div>
 
                 </div>
@@ -120,7 +120,7 @@
                             <div class="form-check-inline">
                                 <label class="form-check-label" for="master">
                                     <input type="radio" class="form-check-input" id="master" name="optradio"
-                                        value="option1">
+                                        value="option1" checked>
                                     <i class="fab fa-cc-mastercard fa-2x"></i>
                                 </label>
                             </div>
@@ -152,7 +152,7 @@
                     <div class="col-6">
                         <div class="form-group">
                             <label for="comment"> <strong> Message</strong></label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" required></textarea>
                         </div>
                     </div>
                 </div>

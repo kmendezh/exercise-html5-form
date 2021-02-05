@@ -3,9 +3,24 @@ body
     font-family: 'Lato';
 }
 
+input
+{
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;    
+}
+
 .btn
 {
     font-size: 20px;
+}
+
+.card_container
+{
+    background-color: rgb(168, 168, 168);
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
 }
 
 #box
@@ -17,6 +32,7 @@ body
     border-width: 1px;
     border-color: rgb(231, 229, 229);
     padding: 0;
+    margin-bottom: 15px;
 }
 
 #form_header, #form_footer
@@ -44,14 +60,13 @@ body
 
 #form_body
 {
-    background-color: green;
     height: 600px;
     padding: 20px;
 }
 
 #error_msg
 {
-    background-color: blue;
+    
     height: 50px;
     margin-bottom: 20px;
 }
